@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Crypto Ticket</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+ 
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">CryptoTicket</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">My Tickets</h3>
+            </div>
+            <div class="panel-body">
+              <h4>Tickets Owned</h4>
+              <strong>Availble</strong>: <span id="TTBalance"></span> <br/><br/>
+               <strong>Cost In Ether</strong>: <span id="cost"></span> <br/><br/>
+              <strong>MyTickets</strong>: <span id="TTB"></span> <br/><br/>
+              <h4>Purchase</h4>
+              
+              <input type="text" class="form-control" id="TTTransferAmount" placeholder="Amount" />
+              <button class="btn btn-primary" id="transferButton" type="button">Buy</button>
+            </div>
+             <button class="btn btn-primary" id="PB" type="button">Print</button>
+               <input type="text"  size=8px placeholder="ticket number" id="PQ">
+               <button class="btn btn-primary" id="SB" type="button">Scan</button>
+            <div id="QR">
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div id=DisplayCode></div>
+      <video id="preview"></video>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/instascan.min.js"></script>s
+   <script src="js/web3.min.js"></script>
+   <script src="ethjs-util.min.js"></script>
+   <script src="js/qrcode.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
